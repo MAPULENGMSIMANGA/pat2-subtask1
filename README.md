@@ -41,6 +41,7 @@ Here are some resources that discuss the historical context of Morse code's crea
 •	The Library of Congress: Their digital collections contain historical documents and information related to the telegraph and its inventors.10
 •	Academic Journals focusing on the History of Science and Technology: Articles in these journals often provide in-depth analyses of the social, economic, and technological factors that led to the development of the telegraph and Morse code. You can search databases like JSTOR or Project MUSE for relevant articles.
 These resources will provide a more detailed understanding of the 19th-century context that necessitated and fostered the invention of Morse code as a crucial tool for the burgeoning age of electrical communication.
+
 Explanation of how morse code system work
 The Morse code system works by representing letters, numerals, and punctuation marks as unique sequences of two distinct signals:
 •	Dots (·): These are short duration signals, often referred to as "dits."
