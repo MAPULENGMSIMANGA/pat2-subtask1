@@ -37,3 +37,6 @@ int main() {
     std::string input;
     std::cout << "Enter a sentence to convert to Morse code: ";
     std::getline(std::cin, input);
+    std::cout << "\nConversions:\n";
+    std::string morse = toMorseCode(input);
+
