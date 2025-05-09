@@ -28,3 +28,12 @@ std::string toMorseCode(const std::string& text) {
             morseCode += "   ";  // Separate words
         }
         // All other characters are ignored
+    }
+
+    return morseCode;
+}
+
+int main() {
+    std::string input;
+    std::cout << "Enter a sentence to convert to Morse code: ";
+    std::getline(std::cin, input);
