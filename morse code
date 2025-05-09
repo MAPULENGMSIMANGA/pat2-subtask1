@@ -14,3 +14,17 @@ std::map<char, std::string> createMorseMap() {
         {'Z', "--.."}
     };
 }
+std::string toMorseCode(const std::string& text) {
+    auto morseMap = createMorseMap();
+    std::string morseCode;
+
+    for (char ch : text) {
+        if (std::isalpha(ch)) {
+            char upperChar = std::toupper(ch);
+            std::string morse = morseMap[upperChar];
+            std::cout << upperChar << ": " << morse << ":" << std::endl;
+            morseCode += morse + " ";
+        } else if (ch == ' ') {
+            morseCode += "   ";  // Separate words
+        }
+        // All other characters are ignored
