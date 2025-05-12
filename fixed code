@@ -1,8 +1,8 @@
 //9908061136086
 #include <iostream>      // Properly included the standard I/O header
-#include <iomanip>       // Added for elegant decimal formatting with setprecision
+#include <iomanip>       // Added for decimal formatting with setprecision
 
-using namespace std;     // Corrected from 'stt' to the proper 'std'—easy mistake
+using namespace std;     // Corrected from 'stt' to the proper 'std'— mistake
 
 const int NUM_EXPERIMENTS = 3;
 const int NUM_READINGS = 3;
@@ -10,7 +10,7 @@ const int NUM_READINGS = 3;
 int main() {             // Changed from 'float main()' to 'int main()'—main should return an integer
 
     for (int i = 1; i <= NUM_EXPERIMENTS; i++) { 
-        double readingValue, total = 0, average; // Initialized 'total' to zero for each experiment—so tidy
+        double readingValue, total = 0, average; // Initialized 'total' to zero for each experiment
 
         for (int j = 1; j <= NUM_READINGS; j++) { // Repaired missing semicolon in the 'for' loop condition
             cout << "Enter reading " << j << " value: ";
@@ -18,9 +18,9 @@ int main() {             // Changed from 'float main()' to 'int main()'—main s
             total += readingValue;               // Switched from subtracting to properly accumulating values
         }
 
-        average = total / NUM_READINGS;          // Removed the odd '+ total'—now it's beautifully logical
+        average = total / NUM_READINGS;          // Removed the odd '+ total'—now it's logical
 
-        // Gracefully refined the logic to evaluate the average in correct order and structure
+        // Refined the logic to evaluate the average in correct order and structure
         if (average > 300) {
             cout << "Experiment " << i << " average: "
                  << fixed << setprecision(2)
@@ -31,7 +31,7 @@ int main() {             // Changed from 'float main()' to 'int main()'—main s
                  << " is Within acceptable range\n";
         } else {
             cout << "Experiment " << i << " average: "
-                 << fixed << setprecision(2) << average  // Fixed a little typo—‘avergae’ to ‘average’
+                 << fixed << setprecision(2) << average  
                  << " is Below acceptable range\n";
         }
     }
